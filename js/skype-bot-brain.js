@@ -1,6 +1,6 @@
 module.exports = function(connector) {
     var builder = require('botbuilder');
-    var sendSms = require('./send_sms');
+    var sendSms = require('./send-sms');
     
     var bot = new builder.UniversalBot(connector, function (session) {
         session.sendTyping();

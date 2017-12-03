@@ -1,7 +1,7 @@
 skype2sms Bot
 ===
 
-Skype Bot which receives message and sends it via SMS to defined cell phone
+Skype Bot which takes your message and sends to Twilio service with further sending SMS via dedicated SMS number to custom, hardcoded cell phone number.
 
 ## Main data Flow
 
@@ -26,9 +26,9 @@ Skype Bot => Twilio account => ? TwiML App ? => SMS service => send message from
 ## Skype bot and Twilio Steps
 - Follow [these steps](https://docs.microsoft.com/en-us/bot-framework/channel-connect-twilio)
 - Create Skype Bot
-- Create MS app (use MS_APP_ID in skype bot config)
+- Create MS app (use APP_ID in skype bot config)
 - Create [TwiML app on Twilio](https://www.twilio.com/console/phone-numbers/runtime/twiml-apps)
-- Use TwiMl app SID
+- Use TwiML app SID
 - https://www.twilio.com/docs/glossary/what-is-an-sms-short-message-service
 
 ## Skype Bot issues
