@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "Skype Bot which takes your message and sends to Twilio service with further sending SMS via dedicated SMS number to custom, hardcoded cell phone number.",
   "main": "./js/server.js",
+  "bin": {
+    "sendSms": "node ./js/send-sms-shell.js"
+  },
   "scripts": {
     "start": "node ./js/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sendSms": "node ./js/send-sms-shell.js"
   },
   "repository": {
     "type": "git",

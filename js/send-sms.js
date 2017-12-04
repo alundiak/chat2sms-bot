@@ -15,7 +15,7 @@ module.exports = function(smsText) {
     var options = {
         body: smsText,
         from: process.env.NUMBER_FROM,
-        to: process.env.NUMBER_TO
+        to: process.env.NUMBER_TO || process.env.NUMBER_TO_ME_UA
     }
     console.log(options)
 
