@@ -62,3 +62,14 @@ Chat (Channel) Bot (Skype, Telegram, Messenger, etc)
 - http://www.businessinsider.com/facebook-slack-skype-snapchat-sms-chatbots-2017-11?IR=T
 - https://techcrunch.com/2016/03/30/microsoft-is-bringing-bots-to-skype-and-everywhere-else/
 
+## Privacy Policy
+- https://docs.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-facebook?view=azure-bot-service-4.0
+- https://developers.facebook.com/apps/1103258253171822/messenger/settings/
+- Facebook app https://developers.facebook.com/apps/1103258253171822/
+- https://termsfeed.com/blog/privacy-policy-url-facebook-app/
+- https://termsfeed.com/privacy-policy/7d8e5efe5e4c0e2895c77a333999793f
+
+## Production URLs
+- https://www.facebook.com/pg/chat2sms
+
+
