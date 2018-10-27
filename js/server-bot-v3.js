@@ -1,10 +1,10 @@
 //
-// Skype Bot Server
+// Bot Server (v3 API)
 // 
 module.exports = function() {
     var builder = require('botbuilder');
     var restify = require('restify');
-    var BotBrain = require('./skype-bot-brain');
+    var BotBrain = require('./smsBot-v3');
 
     var server = restify.createServer({
         name: 'skype2sms-bot',
@@ -20,7 +20,7 @@ module.exports = function() {
 
     server.post('/api/messages', connector.listen());
 
-    server.listen(process.env.PORT || 3978, function() {
+    server.listen(process.env.PORT, function() {
         console.log('%s listening to %s', server.name, server.url);
     });
 }

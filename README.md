@@ -1,11 +1,17 @@
-skype2sms Bot
+chat2sms-bot
 ===
 
-Skype Bot which takes your message and sends to Twilio service with further sending SMS via dedicated SMS number to custom, hardcoded cell phone number.
+Bot to be added in any kind of channel/chat, where I can send a message, and it will be sent later via Twilio SMS service to SMS recipient, hardcoded on server. Maybe will be custom recipient phone  number. TODO.
 
 ## Main data Flow
 
-Skype Bot => Twilio account => ? TwiML App ? => SMS service => send message from SMS service number to hardcoded custom and verified number.
+```
+Chat (Channel) Bot (Skype, Telegram, Messenger, etc) 
+  => MicrosoftApp
+    => Twilio account 
+      => ? TwiML App ? 
+        => SMS service => send message from SMS service number to hardcoded custom and verified number.
+```
 
 ## Tech Stack
 - JavaScript, NodeJS

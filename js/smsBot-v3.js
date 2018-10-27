@@ -1,3 +1,4 @@
+// Bot Logic based on old v3.x
 module.exports = function(connector) {
     var builder = require('botbuilder');
     var sendSms = require('./send-sms');

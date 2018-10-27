@@ -1,32 +1,44 @@
 {
-  "name": "skype-sms-bot",
+  "name": "chat2sms-bot",
   "version": "1.0.0",
-  "description": "Skype Bot which takes your message and sends to Twilio service with further sending SMS via dedicated SMS number to custom, hardcoded cell phone number.",
+  "description": "Bot which takes your message and sends to Twilio service with further sending SMS via dedicated SMS number to custom, hardcoded cell phone number.",
   "main": "./js/server.js",
   "bin": {
     "sendSms": "node ./js/send-sms-shell.js"
   },
   "scripts": {
-    "start": "node ./js/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"Error: no build specified\" && exit 1",
+    "start": "node ./js/server.js",
+    "watch": "nodemon ./index.js",
     "sendSms": "node ./js/send-sms-shell.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alundiak/skype-sms-bot.git"
+    "url": "git+https://github.com/alundiak/chat2sms-bot.git"
   },
-  "author": "",
+  "author": "Andrii Lundiak",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alundiak/skype-sms-bot/issues"
+    "url": "https://github.com/alundiak/chat2sms-bot/issues"
   },
-  "homepage": "https://github.com/alundiak/skype-sms-bot#readme",
+  "homepage": "https://github.com/alundiak/chat2sms-bot#readme",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "botbuilder": "^3.12.0",
-    "dotenv": "^4.0.0",
-    "express": "^4.16.2",
+    "botbuilder": "^4.0.6",
+    "botframework-config": "^4.0.6",
+    "dotenv": "^6.0.0",
     "restify": "^6.3.4",
-    "twilio": "^3.10.1"
+    "twilio": "^3.23.1"
+  },
+  "devDependencies": {
+    "@types/node": "10.10.2",
+    "@types/restify": "7.2.4",
+    "eslint": "^5.7.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "nodemon": "^1.18.4"
   }
 }

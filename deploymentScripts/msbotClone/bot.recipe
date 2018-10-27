@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "resources": [
+    {
+      "type": "endpoint",
+      "id": "1",
+      "name": "chat2sms",
+      "url": "http://localhost:3979/api/messages"
+    },
+    {
+      "type": "endpoint",
+      "id": "2",
+      "name": "production",
+      "url": "https://chat2sms-bot.herokuapp.com/api/messages"
+    },
+    {
+      "type": "abs",
+      "id": "3",
+      "name": "chat2sms-abs"
+    },
+    {
+      "type": "appInsights",
+      "id": "4",
+      "name": "chat2sms-insights"
+    },
+    {
+      "type": "blob",
+      "id": "5",
+      "name": "chat2sms-blob",
+      "container": "botstatestore"
+    }
+  ]
+}

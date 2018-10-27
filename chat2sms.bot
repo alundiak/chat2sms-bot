@@ -1,0 +1,24 @@
+{
+    "name": "chat2sms",
+    "description": "Using available channels, send a message, which later on will be sent as SMS to predefined recipient.)",
+    "services": [
+        {
+            "type": "endpoint",
+            "appId": "",
+            "appPassword": "",
+            "endpoint": "http://localhost:3979/api/messages",
+            "id": "1",
+            "name": "development"
+        }, 
+        {
+            "type": "endpoint",
+            "id": "2",
+            "name": "production",
+            "url": "https://chat2sms-bot.herokuapp.com/api/messages"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0",
+    "path": "/Users/alund/prj/bot2-chat2sms-bot/chat2sms.bot",
+    "overrides": null
+}
